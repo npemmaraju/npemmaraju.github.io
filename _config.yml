@@ -1,118 +1,144 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+repository: npemmaraju/npemmaraju.github.io
+# favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
 name: Narayani Sai Pemmaraju
-title: Studying Masters at New York University
+title: MS Data Science Student @ NYU | Biomedical Track
 email: narayani.pemmaraju@nyu.edu
-# email_title: Email (Email title override)
-phone: 
-# phone_title: Phone (Phone title override)
-website: 
-# website_title: Web (Website title override)
+website: narayani.pemmaraju.github.io
 
 # Dark Mode (true/false/never)
 darkmode: true
 
 # Social links
-
-#github_username:  jekyll
-linkedin_username: https://www.linkedin.com/in/narayanipemmaraju/
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
+github_username: npemmaraju
+linkedin_username: narayanipemmaraju
 
 # Additional icon links
-additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
+# - title: Resume
+#   icon: fas fa-file-pdf
+#   url: /assets/resume.pdf
 
 # About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: Directory of profile image (eg. images/profile.jpg)
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+about_profile_image: images/profile.jpg
+about_content: | 
+  Hi! I'm Narayani, a first-year MS Data Science student at NYU specializing in the Biomedical Track. I previously studied Mechanical Engineering at IIT Kharagpur and have worked on projects spanning fraud detection, NLP for social media analysis, and healthcare ML applications.
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  I'm passionate about applying machine learning to solve real-world problems, particularly in healthcare and finance. When I'm not coding or diving into data, you'll find me exploring New York City on long walks or enjoying music (I play the ukulele!).
+
+  **Current Focus:** Quantitative finance, computer vision for emergency detection systems, and genomics research analyzing ribosomal RNA variants.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
   - title: Experience
     layout: list
     content:
-      - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
+      - layout: left
+        title: American Express
+        sub_title: Data Science Intern - Credit and Fraud Risk
+        caption: May 2024 – Jul 2024
+        description: |
+          - Identified a previously overlooked fraud-prone segment by analyzing **27M+ transactions** using complex SQL queries & Python
+          - Boosted fraud capture rate by **38 basis points** in target segment using XGBoost, data augmentation techniques, and SWAP Set analysis
+          - Collaborated with cross-functional teams and presented insights to senior stakeholders; received a return offer
+          
+      - layout: left
+        title: Indian Institute of Technology Kharagpur
+        sub_title: Research Intern - Applied ML for Healthcare
+        caption: Oct 2024 – Apr 2025
+        description: |
+          **Project:** Designing a Low-Cost Solar-Powered Health Diagnostic Device for rural communities
+          - Developed an end-to-end ML pipeline integrating physiological sensor data (heart rate, SpO2, temperature) with patient health records
+          - Built a Streamlit dashboard with PostgreSQL backend for data visualization and analysis
+          
+      - layout: left
+        title: University of Tartu, Estonia
+        sub_title: Machine Learning Intern - NLP for Social Media
+        caption: Jan 2023 – Jul 2023
+        description: |
+          **Project:** Enhancing Stance Detection of Tweets for early detection of hate crimes
+          - Improved F1 score by **4.8%** using prompt augmentation combined with knowledge graphs
+          - Curated 150 relevant features from 3,000+ using statistical methods and feature selection
+          - Built and validated Deep Learning NLP models in PyTorch using transformer architecture, BERT, and LLMs
+
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        title: GenAI for Legal and Finance
+        link: 
+        caption: Inter-IIT Tech Meet 13.0 | Oct 2024 – Dec 2024
+        description: |
+          **Result:** Secured Bronze Medal among 23 IITs; contributed to overall Contingent Gold
+          - Architected 3 RAG-based agentic pipelines using LangChain and LLM APIs to automate due diligence workflows
+          - Designed multi-agent systems with human-in-the-loop validation, reducing retrieval latency and improving accuracy
+          
+      - layout: left
+        title: Tourism Footfall Forecasting
+        caption: Open IIT Data Analytics Competition | Sep 2023 – Oct 2023
+        description: |
+          **Result:** Bronze Medal among 100 teams; 100% marks in EDA presentation
+          - Created 40+ features using external data sources (Google Trends, reviews, government websites)
+          - Achieved MAPE score of 0.078 using Meta Learning ensemble of Random Forest, KELM, and Extra Trees
+          
+      - layout: left
+        title: Churn Prediction - Video Subscription
+        caption: Coursera Data Science Hackathon | Jun 2023 – Jul 2023
+        description: |
+          **Result:** ROC-AUC 0.748, ranking top 4% of participants in 64-hour hackathon
+          - Performed feature selection using Chi-Squared Test
+          - Cross-validated with RepeatedStratifiedKFold; implemented Logistic Regression and Random Forest models
+
   - title: Education
     layout: list
     content:
-      - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
+      - layout: left
+        title: New York University
+        sub_title: MS in Data Science (Biomedical Track)
+        caption: Expected May 2027
         quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
+          GPA: 3.8/4.0
+        description: |
+          **Relevant Coursework:** Evaluative Methods in Risk Models, Introduction to Data Science, Machine Learning, Big Data
+          
+          **Current Research Interest:** Working with Professor Hochwagen on analyzing ribosomal RNA variants in the All of Us dataset to identify disease associations
+          
+      - layout: left
+        title: Indian Institute of Technology Kharagpur
+        sub_title: BTech in Mechanical Engineering
+        caption: Graduated May 2025
+        quote: >
+          GPA: 8.31/10
+        description: |
+          Strong foundation in analytical problem-solving and engineering principles, which I now apply to data science and machine learning challenges.
+
+  - title: Technical Skills
+    layout: text
+    content: |
+      **AI/ML & LLM Frameworks:** PyTorch, TensorFlow, Scikit-learn, LangChain, HuggingFace, Transformers, OpenAI API
+      
+      **Programming & Tools:** Python, SQL, Git, bash, VSCode, R (basic)
+      
+      **Data & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, Streamlit
+
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
-
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+    content: |
+      Beyond data science, I'm an avid explorer of New York City – there's nothing I love more than discovering new neighborhoods on foot and stumbling upon hidden gems. Music is another big part of my life; I enjoy playing the ukulele and finding chord arrangements for Hindi songs.
+      
+      Originally from India, I've had the opportunity to work and study across different countries (Estonia, India, and now the US), which has shaped my perspective on solving global challenges through technology.
+      
+      **Currently excited about:** Quantitative finance, computer vision applications for emergency detection, and the intersection of genomics and machine learning.
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
+references_title: References available upon request
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+remote_theme: sproogen/modern-resume-theme
 
 sass:
   sass_dir: _sass
