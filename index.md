@@ -7,8 +7,6 @@ profile:
 published: true
 ---
 
-![Profile Photo](assets/images/profile.png)
-
 Hi! I'm **Narayani**, an MS Data Science student at NYU specializing in Biomedical Data Science. 
 I'm broadly interested in data science in Fintech and Healthcare.
 
