@@ -1,11 +1,11 @@
 ### your site title here
 
-title: Your Name
+title: Narayani Sai Pemmaraju
 description: subtitle | affiliations | motto
 
-baseurl: /gradfolio #name of GitHub repository
-url: "" #custom url to be used instead of GitHub repository
-email: #
+# baseurl: /gradfolio #name of GitHub repository
+# url: "" #custom url to be used instead of GitHub repository
+email: narayani.pemmaraju@nyu.edu
 
 # Pagination
 paginate: 4
