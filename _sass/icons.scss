@@ -1,39 +1,37 @@
-ul.icons a:hover {
-  background: rgba(0, 0, 0, 0.025);
-}
+// ============================================================
+// ICONS — Social icon list styling
+// ============================================================
 
-ul.icons li {
-  display: inline-block;
-  padding-left: 0.75rem;
-}
+ul.icons {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+  text-align: right;
+  font-size: 1rem;
 
-ul.icons a {
-  -moz-transition: background-color 0.25s ease-in-out;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  -ms-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
-  display: inline-block;
-  width: 2.75rem;
-  height: 2.75rem;
-  line-height: 2.8rem;
-  text-align: center;
-  border: 0;
-  box-shadow: none;
-  padding:0;
-  border-radius: 100%;
-  color: #aaa;
+  li {
+    display: inline-block;
+    padding-left: 8px;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    // Remove the base link underline animation for icon buttons
+    background-image: none !important;
+    background-size: 0 !important;
+  }
 }
 
 .icons i {
-  font-size: 30px;
-  line-height:60px;
-}
-
-.icons {
-  padding: 0;
-  font-size: 1rem;
-  margin-bottom:20px;
-  text-align: right;
+  font-size: 20px;
+  line-height: 1;
+  // No background — color comes from button hover state
+  background: none;
+  color: inherit;
 }
 
 @media screen and (max-width: 768px) {
@@ -42,13 +40,14 @@ ul.icons a {
   }
 }
 
+// Dark mode icon color adjustments
 .dark {
   .icons i {
     background: none;
-    color: #222;
+    color: inherit;
   }
 
   .icons a:hover i {
-    color: #e6e6e6;
+    color: inherit;
   }
 }

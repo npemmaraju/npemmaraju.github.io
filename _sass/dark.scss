@@ -1,15 +1,95 @@
-.dark {
-  background-color: #222;
-  color: #e6e6e6;
-}
+// ============================================================
+// DARK MODE — Blackboard Aesthetic
+// Dark background like a chalkboard, chalk-white text,
+// same sketchy energy as the light mode paper feel.
+// ============================================================
 
 .dark {
-  mark {
-    color: #222;
-    background-color: #e6e6e6;
+  background-color: #1A2530;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: #EDE9DF;
+
+  // ── Headings ──
+  h1, h2, h3, h4, h5, h6 {
+    color: #EDE9DF;
   }
 
+  h2 {
+    color: #B8B0A0;
+  }
+
+  h3::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='4'%3E%3Cpath d='M0 2 Q10 0 20 2 Q30 4 40 2 Q50 0 60 2 Q70 4 80 2 Q90 0 100 2 Q110 4 120 2 Q130 0 140 2 Q150 4 160 2 Q170 0 180 2 Q190 4 200 2' stroke='%233A4A5C' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  }
+
+  // ── Body text ──
+  p, ul, li, body {
+    color: #EDE9DF;
+  }
+
+  strong, b {
+    color: #F8F4EC;
+  }
+
+  // ── Links: chalk-blue on blackboard ──
   a {
-    color: #477dca;
+    color: #7BAFD4;
+    background-image: linear-gradient(#7BAFD4, #7BAFD4);
+
+    &:hover, &:focus {
+      color: #9FCAE8;
+    }
+  }
+
+  // ── Marks/highlights ──
+  mark {
+    background-color: #3A5A80;
+    color: #EDE9DF;
+  }
+
+  // ── Cards ──
+  .sketch-card {
+    background-color: #1F2D3C;
+    border-color: #3A4A5C;
+    box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  // ── Profile image ──
+  .profile-img {
+    border-color: #3A4A5C;
+    box-shadow: 0 0 0 3px #3A4A5C, 4px 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  // ── Section containers ──
+  .intro-container,
+  .list-container,
+  .text-container {
+    border-color: #3A4A5C;
+  }
+
+  // ── Quote ──
+  p.quote {
+    color: #B8B0A0;
+    border-color: #3A4A5C;
+  }
+
+  // ── Footer ──
+  .footer-container {
+    border-top-color: #3A4A5C;
+
+    p, a {
+      color: #7A7268;
+    }
+  }
+
+  // ── Header contact text ──
+  .header-right p, .header-right a {
+    color: #B8B0A0;
   }
 }

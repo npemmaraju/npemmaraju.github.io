@@ -3,7 +3,17 @@
 
 {%- include head.html -%}
 
-<body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
+<body>
+
+  <!-- SVG filter definitions for sketchy/wobbly border effect -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <defs>
+      <filter id="sketch-filter" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="7" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
 
   {%- include header.html -%}
 
@@ -18,7 +28,7 @@
 
       {%- if site.version == 2 -%}
         {% for section in site.content %}
-          <div class="container {{ section.layout }}-container">
+          <div class="container {{ section.layout }}-container sketch-fade">
             <h3 id="{{ section.title | slugify }}">{{ section.title }}</h3>
             {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content %}
           </div>
@@ -30,9 +40,9 @@
   </main>
 
   {%- include footer.html -%}
-  {% if site.darkmode == false %}
-    <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
-  {% endif %}
+
+  <!-- Always load JS: handles dark mode preference + scroll animations -->
+  <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
 </body>
 
 </html>

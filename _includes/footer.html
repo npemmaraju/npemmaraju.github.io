@@ -1,9 +1,10 @@
 <div class="container footer-container">
+  <!-- Small doodle divider -->
   <p>
-    {{ site.name | escape }} -
+    {{ site.name | escape }} &mdash;
     <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
     {%- if site.footer_show_references -%}
-      &nbsp;- {{ site.references_title | default: "References on request" }}
+      &nbsp;&middot;&nbsp;{{ site.references_title | default: "References on request" }}
     {%- endif -%}
   </p>
 </div>

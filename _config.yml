@@ -12,7 +12,7 @@ email: narayani.pemmaraju@nyu.edu
 website: narayani.pemmaraju.github.io
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Social links
 github_username: npemmaraju
@@ -25,8 +25,8 @@ linkedin_username: narayanipemmaraju
 
 # About Section
 about_profile_image: images/profile.jpg
-about_content: | 
-  Hi! I'm Narayani, a first-year MS Data Science student at NYU specializing in the Biomedical Track. I previously studied Mechanical Engineering at IIT Kharagpur and have worked on projects spanning fraud detection, NLP for social media analysis, and healthcare ML applications.
+about_content: |
+  Hi! I'm Narayani, a first-year MS Data Science student at NYU specializing in the Biomedical Track. I previously studied Mechanical Engineering at IIT Kharagpur — and yes, I find it *hilarious* that the path from thermodynamics to transformers made such perfect sense in hindsight. I've worked on projects spanning fraud detection, NLP for social media analysis, and healthcare ML applications.
 
   I'm passionate about applying machine learning to solve real-world problems, particularly in healthcare and finance. When I'm not coding or diving into data, you'll find me exploring New York City on long walks or enjoying music (I play the ukulele!).
 
