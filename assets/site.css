@@ -1,0 +1,237 @@
+/* ============================================================
+   Bold Cards theme — shared by the home and blog pages
+   ============================================================ */
+
+:root {
+  --paper: #FFF4E8;
+  --ink: #111111;
+  --white: #FFFFFF;
+  --coral: #FF6B4A;
+  --yellow: #FFD23F;
+  --blue: #7FD8FF;
+  --green: #B7F0C8;
+  --line: 3px solid var(--ink);
+  --shadow: 6px 6px 0 var(--ink);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+a { color: var(--ink); }
+
+h1, h2, h3, .display {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0;
+}
+
+/* ---------- Menu bar (sticky, same on every page) ---------- */
+
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 40px;
+  background: var(--paper);
+  border-bottom: var(--line);
+}
+
+.menu__logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.pill {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  background: var(--white);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+.pill--active { background: var(--yellow); }
+
+/* ---------- Layout ---------- */
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+section {
+  scroll-margin-top: 90px;
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 28px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.grid > * { flex: 1 1 300px; }
+
+/* ---------- Cards ---------- */
+
+.card {
+  background: var(--white);
+  border: var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 26px;
+}
+
+.card--yellow { background: var(--yellow); }
+.card--blue { background: var(--blue); }
+.card--coral { background: var(--coral); }
+.card--ink { background: var(--ink); color: var(--paper); }
+
+.card h3 {
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.card p { margin: 0; font-size: 15px; line-height: 1.6; }
+
+.card .meta {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--green);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 2px 10px;
+  margin-bottom: 14px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  margin-top: 72px;
+  padding: 48px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 80px);
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  max-width: 680px;
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+.hero p:last-child { margin-bottom: 0; font-size: 17px; }
+
+/* ---------- Skills + contact ---------- */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.chip {
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+.contact {
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.contact h2 { font-size: 42px; margin-bottom: 14px; }
+
+.contact p {
+  font-size: 18px;
+  max-width: 620px;
+  margin: 0 0 24px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--paper);
+  border-radius: 999px;
+  padding: 10px 20px;
+  color: var(--paper);
+}
+
+.button--primary {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--ink);
+}
+
+/* ---------- Blog ---------- */
+
+.blog-intro {
+  margin: 72px 0 0;
+  padding: 48px;
+}
+
+.blog-intro h1 {
+  font-size: clamp(42px, 7vw, 80px);
+  margin-bottom: 18px;
+}
+
+.blog-intro p {
+  font-size: 18px;
+  max-width: 640px;
+  margin: 0;
+}
+
+.post-card h3 a { text-decoration: none; }
+.post-card h3 a:hover { text-decoration: underline; }
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 640px) {
+  .menu { padding: 12px 16px; }
+  .page { padding: 0 16px; }
+  .hero, .blog-intro, .contact { padding: 28px; }
+  .section-title { font-size: 34px; }
+}
