@@ -1,11 +1,14 @@
 name: NYPL scraper test
 on:
+  push:
+    branches: [claude/kind-dirac-rcw4b0]
+    paths: ['scripts/nypl/**', '.github/workflows/nypl-test.yml']
   workflow_dispatch:
     inputs:
       query:
         description: "Search keywords"
         default: "verity colleen hoover"
-        required: true
+        required: false
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -18,4 +21,4 @@ jobs:
       - name: Check reachability
         run: curl -sS -o /dev/null -w "bibliocommons HTTP %{http_code}\n" "https://nypl.bibliocommons.com/" || true
       - name: Run scraper
-        run: python3 scripts/nypl/nypl_verity.py "${{ inputs.query }}"
+        run: python3 scripts/nypl/nypl_verity.py "${{ inputs.query || 'verity colleen hoover' }}"
